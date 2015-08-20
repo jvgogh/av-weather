@@ -52,7 +52,34 @@ wget http://sggate.arc.nasa.gov:9518/GoogleEarth/tfr.kml
 wget --user-agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.134 Safari/537.36" -O radar_overlay_WA.gif "http://radblast.wunderground.com/cgi-bin/radar/WUNIDS_composite?maxlat=48.317724952092306&maxlon=-120.3338012658625&minlat=46.48685789290718&minlon=-124.24768066064074&height=985&width=1425&type=00Q&frame=0&num=1&delay=25&png=0&min=0&rainsnow=1&nodebug=0&theext=.gif&timelabel=1&timelabel.x=673&timelabel.y=973&brand=wundermap&smooth=1&radar_bitmap=1&noclutter=1&noclutter_mask=1&cors=1&reproj.automerc=1"
 wget --user-agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.134 Safari/537.36" -O IR_overlay_WA.gif "http://wublast.wunderground.com/cgi-bin/WUBLAST?maxlat=48.317724952092306&maxlon=-120.3338012658625&minlat=46.48685789290718&minlon=-124.24768066064074&key=sat_ir4&frame=0&height=985&width=1425&delay=25&merge=elev&min=2&noclutter=0&nodebug=0&num=1&png=0&timelabel=1&timelabel.x=673&timelabel.y=973&gtt=120"
 
+# swl
+wget http://www.aviationweather.gov/data/products/swl/ll_00_0_cl_new.gif
+wget http://www.aviationweather.gov/data/products/swl/ll_00_1_cl_new.gif
+wget http://www.aviationweather.gov/data/products/swl/ll_00_2_cl_new.gif
+wget http://www.aviationweather.gov/data/products/swl/ll_00_3_cl_new.gif
+wget http://www.aviationweather.gov/data/products/swl/ll_00_4_cl_new.gif
+wget http://www.aviationweather.gov/data/products/swl/ll_06_0_cl_new.gif
+wget http://www.aviationweather.gov/data/products/swl/ll_06_1_cl_new.gif
+wget http://www.aviationweather.gov/data/products/swl/ll_06_2_cl_new.gif
+wget http://www.aviationweather.gov/data/products/swl/ll_06_3_cl_new.gif
+wget http://www.aviationweather.gov/data/products/swl/ll_06_4_cl_new.gif
+wget http://www.aviationweather.gov/data/products/swl/ll_12_0_cl_new.gif
+wget http://www.aviationweather.gov/data/products/swl/ll_12_1_cl_new.gif
+wget http://www.aviationweather.gov/data/products/swl/ll_12_2_cl_new.gif
+wget http://www.aviationweather.gov/data/products/swl/ll_12_3_cl_new.gif
+wget http://www.aviationweather.gov/data/products/swl/ll_12_4_cl_new.gif
+wget http://www.aviationweather.gov/data/products/swl/ll_18_0_cl_new.gif
+wget http://www.aviationweather.gov/data/products/swl/ll_18_1_cl_new.gif
+wget http://www.aviationweather.gov/data/products/swl/ll_18_2_cl_new.gif
+wget http://www.aviationweather.gov/data/products/swl/ll_18_3_cl_new.gif
+wget http://www.aviationweather.gov/data/products/swl/ll_18_4_bw_new.gif
+wget http://www.aviationweather.gov/data/products/swl/ll_18_4_cl_new.gif
+
+# FA
+wget http://www.aviationweather.gov/data/products/fa/sanfrancisco_fa
+
 cd ~/data
 gsutil -m rsync -r . gs://av-weather/
 cd ~/
 rm -rf ~/data
+
