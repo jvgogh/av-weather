@@ -1,4 +1,7 @@
 #!/bin/bash
+export HOME=/home/jvgogh
+export PATH=/usr/local/bin:$PATH
+export BOTO_CONFIG=/etc/boto.cfg
 THIS_HOUR=$(date +%Y%m%d/%H)
 DIR=~/data/$THIS_HOUR
 mkdir -p $DIR
