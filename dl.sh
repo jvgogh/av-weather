@@ -47,6 +47,7 @@ wget http://aviationweather.gov/adds/data/satellite/latest_STL_wv.jpg
 
 # kml (spatial files e.g. google earth)
 wget http://sggate.arc.nasa.gov:9518/GoogleEarth/tfr.kml
+gzip tfr.kml
 
 # radar overlay
 wget --user-agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.134 Safari/537.36" -O radar_overlay_WA.gif "http://radblast.wunderground.com/cgi-bin/radar/WUNIDS_composite?maxlat=48.317724952092306&maxlon=-120.3338012658625&minlat=46.48685789290718&minlon=-124.24768066064074&height=985&width=1425&type=00Q&frame=0&num=1&delay=25&png=0&min=0&rainsnow=1&nodebug=0&theext=.gif&timelabel=1&timelabel.x=673&timelabel.y=973&brand=wundermap&smooth=1&radar_bitmap=1&noclutter=1&noclutter_mask=1&cors=1&reproj.automerc=1"
